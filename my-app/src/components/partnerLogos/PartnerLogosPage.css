@@ -1,0 +1,55 @@
+.logos-page {
+  background-color: #0b091a;
+  min-height: auto;
+  padding: 60px 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logos-wrapper {
+  width: 100%;
+  max-width: 1400px;
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.logos-image {
+  max-width: 100%;
+  height: auto;
+  margin-left: 0;
+  object-fit: contain;
+}
+
+@media (min-width: 48rem) {
+  .logos-wrapper {
+    justify-content: space-between;
+    overflow: hidden;
+    gap: 3rem;
+  }
+  .logos-image {
+    height: 56px;
+  }
+}
+
+@media (min-width: 64rem) {
+  .logos-page {
+    padding: 4.5rem 2rem;
+  }
+  .logos-image {
+    height: 64px;
+  }
+}
+
+@media (min-width: 90rem) {
+  .logos-wrapper {
+    gap: 4rem;
+  }
+  .logos-image {
+    height: 72px;
+  }
+}

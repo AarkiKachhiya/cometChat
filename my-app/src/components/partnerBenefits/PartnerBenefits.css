@@ -1,0 +1,53 @@
+.benefits-section {
+  background-color: #0b091a;
+  padding: clamp(40px, 8vw, 60px) 5vw;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.benefits-grid {
+  max-width: 1200px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.benefit-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.benefit-icon {
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefit-title {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: clamp(16px, 1.5vw, 17px);
+}
+
+.benefit-desc {
+  color: #aaa;
+  font-size: clamp(14px, 1.4vw, 15px);
+}
+
+@media (max-width: 992px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+}

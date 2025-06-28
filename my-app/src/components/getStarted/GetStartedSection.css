@@ -1,0 +1,128 @@
+.get-started-section {
+  position: relative;
+  background-color: #0b0b1c;
+  padding: clamp(60px, 10vw, 120px) 5vw;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  min-height: 100px;
+}
+
+.planet-left {
+  position: absolute;
+  top: -150px;
+  left: -180px;
+  width: clamp(200px, 30vw, 500px);
+  height: clamp(200px, 30vw, 500px);
+  background-image: url("../../assets/Group1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  pointer-events: none;
+  transform: rotate(45deg);
+  z-index: 0;
+}
+
+.planet-right {
+  position: absolute;
+  bottom: -50px;
+  right: -60px;
+  width: clamp(180px, 25vw, 400px);
+  height: clamp(180px, 25vw, 400px);
+  background-image: url("../../assets/Group2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.dot {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 4px;
+  height: 4px;
+  z-index: 1;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.dot1 { top: 40px; left: 300px; background-image: url('../../assets/dot1.png'); }
+.dot2 { top: 240px; left: 30%; background-image: url('../../assets/dot2.png'); }
+.dot3 { bottom: 80px; right: 140px; background-image: url('../../assets/dot3.png'); }
+.dot4 { top: 200px; left: 500px; background-image: url('../../assets/dot1.png'); }
+.dot5 { top: 300px; left: 230px; background-image: url('../../assets/dot2.png'); }
+.dot6 { top: 400px; left: 400px; background-image: url('../../assets/dot3.png'); }
+.dot7 { top: 200px; left: 1100px; background-image: url('../../assets/dot1.png'); }
+.dot8 { top: 330px; left: 130px; background-image: url('../../assets/dot2.png'); }
+.dot9 { top: 450px; left: 150px; background-image: url('../../assets/dot3.png'); }
+.dot10 { top: 290px; left: 150px; background-image: url('../../assets/dot1.png'); }
+.dot11 { top: 900px; left: 190px; background-image: url('../../assets/dot2.png'); }
+.dot12 { top: 380px; left: 310px; background-image: url('../../assets/dot3.png'); }
+.dot13 { top: 480px; right: 230px; background-image: url('../../assets/dot1.png'); }
+.dot14 { top: 330px; right: 320px; background-image: url('../../assets/dot2.png'); }
+.dot15 { top: 270px; right: 300px; background-image: url('../../assets/dot3.png'); }
+
+.get-started-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-inline: 1rem;
+}
+
+.get-started-title {
+  font-size: clamp(28px, 5vw, 40px);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.get-started-subtext {
+  font-size: clamp(15px, 2vw, 18px);
+  line-height: 1.5;
+  color: #d2d2e2;
+  margin-bottom: 40px;
+}
+
+.get-started-buttons .btn {
+  padding: 12px 24px;
+  font-size: clamp(14px, 1.2vw, 16px);
+  margin: 0 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+}
+
+.arc-svg {
+  position: absolute;
+  top: 30px;
+  right: -215px;
+  width: clamp(800px, 80vw, 1600px);
+  height: auto;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.btn-dark {
+  background-color: #1b1b1f;
+  color: white;
+}
+
+.btn-purple {
+  background-color: #7b63ff;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .get-started-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+  .get-started-buttons .btn {
+    margin: 0;
+    width: 80%;
+  }
+}
