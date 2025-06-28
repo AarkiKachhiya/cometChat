@@ -124,11 +124,11 @@ const Footer = () => {
       <div className="footer-bottom">
         <span>2023 © CometChat</span>
         <div className="footer-links">
-          <a href="#">Terms of Use</a>
-          <a href="#">Privacy Policy</a>
+          <a href="#!">Terms of Use</a>
+          <a href="#!">Privacy Policy</a>
         </div>
         <div className="footer-socials">
-          <a href="#" aria-label="Facebook">
+          <a href="#!" aria-label="Facebook">
             <svg
               width="85"
               height="20"
@@ -150,7 +150,7 @@ const Footer = () => {
             </svg>
           </a>
 
-          <a href="#" aria-label="LinkedIn">
+          <a href="#!" aria-label="LinkedIn">
             <svg
               width="77"
               height="20"
@@ -172,7 +172,7 @@ const Footer = () => {
             </svg>
           </a>
 
-          <a href="#" aria-label="Instagram">
+          <a href="#!" aria-label="Instagram">
             <svg
               width="87"
               height="20"
@@ -194,7 +194,7 @@ const Footer = () => {
             </svg>
           </a>
 
-          <a href="#" aria-label="Twitter">
+          <a href="#!" aria-label="Twitter">
             <svg
               width="66"
               height="20"
@@ -216,7 +216,7 @@ const Footer = () => {
             </svg>
           </a>
 
-          <a href="#" aria-label="GitHub">
+          <a href="#!" aria-label="GitHub">
             <svg
               width="68"
               height="20"
